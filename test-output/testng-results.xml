@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-08T08:24:29 IST" name="Default suite" finished-at="2024-07-08T08:24:38 IST" duration-ms="9480">
+    <groups>
+    </groups>
+    <test started-at="2024-07-08T08:24:29 IST" name="Default test" finished-at="2024-07-08T08:24:38 IST" duration-ms="9480">
+      <class name="scripts.TC1">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:scripts.TC1@1a677343]" started-at="2024-07-08T08:24:28 IST" name="createReport" finished-at="2024-07-08T08:24:29 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReport -->
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method)[pri:0, instance:scripts.TC1@1a677343]" started-at="2024-07-08T08:24:29 IST" name="preCondition" finished-at="2024-07-08T08:24:36 IST" duration-ms="6819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void scripts.TC1.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="test1()[pri:0, instance:scripts.TC1@1a677343]" started-at="2024-07-08T08:24:36 IST" name="test1" finished-at="2024-07-08T08:24:37 IST" duration-ms="1242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.TC1@1a677343]" started-at="2024-07-08T08:24:37 IST" name="postCondition" finished-at="2024-07-08T08:24:38 IST" duration-ms="1364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TC1.test1()[pri:0, instance:scripts.TC1@1a677343] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:scripts.TC1@1a677343]" started-at="2024-07-08T08:24:38 IST" name="publishReport" finished-at="2024-07-08T08:24:39 IST" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishReport -->
+      </class> <!-- scripts.TC1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
