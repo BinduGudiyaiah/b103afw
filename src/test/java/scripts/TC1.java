@@ -1,17 +1,18 @@
 package scripts;
 
-import org.testng.Reporter;
-import org.testng.annotations.Test;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 
-import generic.BaseTest;
-import generic.Utility;
+public class TC1 {
 
-public class TC1 extends BaseTest
-{
-	@Test
-	public void test1()
-	{
-		String data = Utility.getExcelData(EXCEL_PATH, "TC1", 0, 0);
-		test.info(driver.getTitle());
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+		//How to read data from property file
+		Properties p=new Properties();
+		p.load(new FileInputStream("./config.properties"));
+		String v = p.getProperty("APP_URL");
+		System.out.println(v);
 	}
+
 }
