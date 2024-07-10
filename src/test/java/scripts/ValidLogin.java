@@ -13,8 +13,8 @@ public class ValidLogin extends BaseTest
 	@Test(priority = 1)
 	public void testValidLogin()
 	{
-		String un = Utility.getExcelData(EXCEL_PATH, "ValidLogin",1, 0);
-		String pw = Utility.getExcelData(EXCEL_PATH, "ValidLogin",1, 1);
+		String un = Utility.getExcelData(EXCEL_PATH, "ValidLogin",2, 0);
+		String pw = Utility.getExcelData(EXCEL_PATH, "ValidLogin",2, 1);
 		
 //		1. enter valid user name
 		LoginPage loginPage=new LoginPage(driver);
