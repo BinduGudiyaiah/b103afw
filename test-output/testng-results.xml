@@ -2,33 +2,36 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Logout']' (tried for 8 second(s) with 500 milliseconds interval)]]>
+      <![CDATA[NewItemKitBTN is displayed]]>
     </line>
     <line>
-      <![CDATA[Homepage is NOT displayed]]>
+      <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null]]>
+    </line>
+    <line>
+      <![CDATA[KitID is NOT displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-07-10T07:56:01 IST" name="Default suite" finished-at="2024-07-10T07:56:30 IST" duration-ms="29561">
+  <suite started-at="2024-07-18T17:46:28 IST" name="Default suite" finished-at="2024-07-18T17:46:36 IST" duration-ms="8201">
     <groups>
     </groups>
-    <test started-at="2024-07-10T07:56:01 IST" name="Default test" finished-at="2024-07-10T07:56:30 IST" duration-ms="29561">
-      <class name="scripts.ValidLogin">
-        <test-method is-config="true" signature="createReport()[pri:0, instance:scripts.ValidLogin@1a677343]" started-at="2024-07-10T07:56:00 IST" name="createReport" finished-at="2024-07-10T07:56:01 IST" duration-ms="456" status="PASS">
+    <test started-at="2024-07-18T17:46:28 IST" name="Default test" finished-at="2024-07-18T17:46:36 IST" duration-ms="8201">
+      <class name="scripts.Verify_Itemskit_Page_Displayed_5">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:scripts.Verify_Itemskit_Page_Displayed_5@1a677343]" started-at="2024-07-18T17:46:28 IST" name="createReport" finished-at="2024-07-18T17:46:28 IST" duration-ms="358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method)[pri:0, instance:scripts.ValidLogin@1a677343]" started-at="2024-07-10T07:56:01 IST" name="preCondition" finished-at="2024-07-10T07:56:06 IST" duration-ms="5358" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method)[pri:0, instance:scripts.Verify_Itemskit_Page_Displayed_5@1a677343]" started-at="2024-07-18T17:46:28 IST" name="preCondition" finished-at="2024-07-18T17:46:32 IST" duration-ms="4231" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void scripts.ValidLogin.testValidLogin()]]>
+                <![CDATA[public void scripts.Verify_Itemskit_Page_Displayed_5.testVerify_Itemskit_Page_Displayed()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:1, instance:scripts.ValidLogin@1a677343]" started-at="2024-07-10T07:56:06 IST" name="testValidLogin" finished-at="2024-07-10T07:56:29 IST" duration-ms="22471" status="FAIL">
+        <test-method signature="testVerify_Itemskit_Page_Displayed()[pri:1, instance:scripts.Verify_Itemskit_Page_Displayed_5@1a677343]" started-at="2024-07-18T17:46:32 IST" name="testVerify_Itemskit_Page_Displayed" finished-at="2024-07-18T17:46:35 IST" duration-ms="3153" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -39,7 +42,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at scripts.ValidLogin.testValidLogin(ValidLogin.java:29)
+at scripts.Verify_Itemskit_Page_Displayed_5.testVerify_Itemskit_Page_Displayed(Verify_Itemskit_Page_Displayed_5.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -71,29 +74,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Logout']' (tried for 8 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[NewItemKitBTN is displayed]]>
             </line>
             <line>
-              <![CDATA[Homepage is NOT displayed]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null]]>
+            </line>
+            <line>
+              <![CDATA[KitID is NOT displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.ValidLogin@1a677343]" started-at="2024-07-10T07:56:29 IST" name="postCondition" finished-at="2024-07-10T07:56:30 IST" duration-ms="1670" status="PASS">
+        </test-method> <!-- testVerify_Itemskit_Page_Displayed -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.Verify_Itemskit_Page_Displayed_5@1a677343]" started-at="2024-07-18T17:46:35 IST" name="postCondition" finished-at="2024-07-18T17:46:36 IST" duration-ms="756" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=ValidLogin.testValidLogin()[pri:1, instance:scripts.ValidLogin@1a677343] output=Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Logout']' (tried for 8 second(s) with 500 milliseconds interval)]]]>
+                <![CDATA[[TestResult name=testVerify_Itemskit_Page_Displayed status=FAILURE method=Verify_Itemskit_Page_Displayed_5.testVerify_Itemskit_Page_Displayed()[pri:1, instance:scripts.Verify_Itemskit_Page_Displayed_5@1a677343] output=NewItemKitBTN is displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:scripts.ValidLogin@1a677343]" started-at="2024-07-10T07:56:30 IST" name="publishReport" finished-at="2024-07-10T07:56:31 IST" duration-ms="593" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:scripts.Verify_Itemskit_Page_Displayed_5@1a677343]" started-at="2024-07-18T17:46:36 IST" name="publishReport" finished-at="2024-07-18T17:46:37 IST" duration-ms="495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- scripts.ValidLogin -->
+      </class> <!-- scripts.Verify_Itemskit_Page_Displayed_5 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -7,13 +7,15 @@ import generic.BaseTest;
 import generic.Utility;
 import page.LoginPage;
 
-public class InvalidLogin extends BaseTest
+public class InvalidLogin_4 extends BaseTest
 {
 	@Test(priority = 2)
 	public void testInvalidLogin()
 	{
 		String un = Utility.getExcelData(EXCEL_PATH, "ValidLogin",2, 0);
 		String pw = Utility.getExcelData(EXCEL_PATH, "ValidLogin",2, 1);
+		
+		
 		
 //		1. enter invalid user name
 		LoginPage loginPage=new LoginPage(driver);

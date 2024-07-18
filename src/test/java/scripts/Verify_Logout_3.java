@@ -1,6 +1,5 @@
 package scripts;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
@@ -8,11 +7,12 @@ import generic.Utility;
 import page.HomePage;
 import page.LoginPage;
 
-public class ValidLogin extends BaseTest
-{
-	@Test(priority = 1)
-	public void testValidLogin()
-	{
+public class Verify_Logout_3 extends BaseTest {
+	
+	@Test
+	
+	public void testLogout() {
+		
 		String un = Utility.getExcelData(EXCEL_PATH, "ValidLogin",1, 0);
 		String pw = Utility.getExcelData(EXCEL_PATH, "ValidLogin",1, 1);
 		
@@ -23,9 +23,12 @@ public class ValidLogin extends BaseTest
 		loginPage.setPassword(pw);
 //		3. click on go button
 		loginPage.clickGoButton();
-//		4. verify home page is displayed
-		HomePage homePage=new HomePage(driver);
-		boolean result = homePage.verifyHomePageIsDisplayed(wait);
-		Assert.assertTrue(result);
+		
+		HomePage homepage = new HomePage(driver);
+		homepage.clicklogoutBTN();
+		
+		String Curr_Url = driver.getCurrentUrl();
+		System.out.println(Curr_Url);
 	}
+
 }
